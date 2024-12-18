@@ -8,8 +8,6 @@
 #     BIND_PATHS: (can be blank) additional bind paths for singularity
 ################################################################################
 
-BASH_PID=$$
-
 ################################################################################
 # Functions
 ################################################################################
@@ -67,7 +65,7 @@ trap cleanup EXIT
 # ... start the containerised Jupyter Server
 singularity exec \
     --bind "${SESSION_TMP}:/tmp" \
-    --bind "/opt" \
+    --bind "/opt/resources" \
     $([[ -n "${BIND_PATHS}" ]] && echo "--bind ${BIND_PATHS}") \
     $([[ $(hostname) == gpu* ]] && echo "--nv") \
     "${JUPYTER_SIF}" \

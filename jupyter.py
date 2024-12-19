@@ -71,7 +71,7 @@ commands['create'] = commands['new'] = commands['start']
 # arguments
 commands['start'].add_argument(
     'r_version', choices=R_VERSIONS,
-    help='version of R to launch')
+    help='version of Python to launch as the default Jupyter kernel')
 commands['start'].add_argument(
     '-n', '--name', default='jupyter_server', type=str,
     help='job name for the scheduler (default "%(default)s")')
@@ -130,7 +130,7 @@ commands['list'] = subparsers.add_parser(
     description='list running Jupyter servers',
     formatter_class=RawDescriptionRichHelpFormatter)
 # register the alias names as placeholders
-commands['ls'] = commands['list']
+commands['ls'] = commands['show'] = commands['list']
 
 
 # main ########################################################################

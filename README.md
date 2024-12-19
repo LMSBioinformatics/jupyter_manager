@@ -1,6 +1,6 @@
 # jupyter_manager
 
-`jupyter_manager`: launch and manage `jupyter` servers as HPC jobs
+`jupyter_manager`: launch and manage Jupyter HPC jobs
 
 `jupyter.py` controls the creation, deletion, and listing of `jupyter` server
 sessions for the user, which are launched from the

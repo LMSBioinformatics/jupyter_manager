@@ -1,6 +1,6 @@
 #!/usr/bin/env python3.9
 
-''' jupyter: launch and manage jupyter servers as HPC jobs '''
+''' jupyter: launch and manage Jupyter HPC jobs '''
 
 ###############################################################################
 #     __  _  _  ____  _  _  ____  ____  ____
@@ -37,7 +37,7 @@ parser = argparse.ArgumentParser(
                 / \) \) \/ ( ) __/ )  /   )(   ) _)  )   /
                 \____/\____/(__)  (__/   (__) (____)(__\_)
 
-               launch and manage Jupyter servers as HPC jobs
+                    launch and manage Jupyter HPC jobs
 ''',
     formatter_class=RawDescriptionRichHelpFormatter,
     exit_on_error=False,

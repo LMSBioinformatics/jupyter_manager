@@ -69,10 +69,11 @@ singularity exec \
     $([[ -n "${BIND_PATHS}" ]] && echo "--bind ${BIND_PATHS}") \
     $([[ $(hostname) == gpu* ]] && echo "--nv") \
     "${JUPYTER_SIF}" \
-    jupyter lab \
+    jupyter-lab \
        --no-browser \
        --ip ${IP} \
        --port ${PORT} \
        --ServerApp.token '' &
+
 JUPYTER_PID=$!
 wait ${JUPYTER_PID}

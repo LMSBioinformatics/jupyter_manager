@@ -30,7 +30,7 @@ from jupyter_manager.commands import jupyter_start, jupyter_stop, jupyter_list
 commands = {}
 
 parser = argparse.ArgumentParser(
-    prog='__prog__',
+    prog='jupyter',
     description=r'''
                    __  _  _  ____  _  _  ____  ____  ____
                  _(  )/ )( \(  _ \( \/ )(_  _)(  __)(  _ \

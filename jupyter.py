@@ -146,7 +146,7 @@ def main():
     # catch command names by themselves
     if len(sys.argv) == 2 and \
             (sys.argv[1] in commands and
-            sys.argv[1] not in ('list', 'ls')):
+            sys.argv[1] not in ('list', 'ls', 'show')):
         commands[sys.argv[1]].print_help()
         sys.exit(0)
 
